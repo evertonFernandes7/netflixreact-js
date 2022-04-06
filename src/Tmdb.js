@@ -1,20 +1,10 @@
 const API_KEY = 'ffa3d3ac7a568aa4692ea642668c79e2'
 const API_BASE = 'https://api.themoviedb.org/3'
 
-/*
--Originais da netflix
--recomendados (trending)
--Em Alta (top rated)
--Ação
--Comédia
--Terror
--Romance
--Documentários
-*/
 
 const basicFetch = async (endpoint) => {
-    const req = await fetch(`${API_BASE}${endpoint}`) //req para serviço externo
-    const json = await req.json() //roda e espera a resposta
+    const req = await fetch(`${API_BASE}${endpoint}`) 
+    const json = await req.json() 
     return json
 }
 
